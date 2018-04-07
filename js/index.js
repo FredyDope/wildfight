@@ -59,7 +59,7 @@ function newBoard(){
 function memoryFlipTile(tile,slug){
 	const val = `<img src="https://raw.githubusercontent.com/akabab/superhero-api/0.2.0/api/images/sm/${slug}.jpg" />`
 	if(tile.innerHTML == "" && memory_values.length < 2){
-		tile.style.background = 'black';
+		tile.style.background = '#212121';
 		tile.innerHTML = val;
 		if(memory_values.length == 0){
 			memory_values.push(val);
