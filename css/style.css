@@ -1,13 +1,37 @@
+body {
+    background-color: black;
+}
+
+#memory_board{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: black;
+	/* border: solid red 2px; */
+	margin-right: 10%;
+	margin-left: 10%;
+	/* text-align: center; */
+	/* height: 200px; */
+}
+
 #memory_board > div{
-	border:#000 4px solid;
-	width:60px;
-	height:60px;
-	float:left;
+
+	border: white 2px solid;
+	/* width:60px;
+	height:60px; */
+	/* float:left; */
 	margin:10px;
-	padding:20px;
+	height: 23vh;
+	width:  8vw;
+	border-radius: 5px;
+	/* width: 140px;
+	height: 200px; */
+/* 	padding-top: 0px;
+	padding-bottom: 50px;
+	padding-right: 50px; */
 	font-size:64px;
 	cursor:pointer;
-	text-align:center;
+	/* text-align:center; */
    
 }
 
@@ -19,7 +43,19 @@ font-size: 40px;
 text-shadow: 4px 3px red;
 text-align: center;
 background-color: black;
+vertical-align: middle;
+line-height: 80px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
+img{
+	height: 23vh;
+	width:  8vw;
+	border-radius: 5px;
+	/* width: 140px ;
+	height: 200px; */
+	/* position: relative; */
 
+}
 
