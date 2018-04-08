@@ -13,9 +13,9 @@ body { background-color: #212121; }
 
 	border: white 2px solid;
 	margin:10px;
-	height: 23vh;
-	width:  8vw;
-	border-radius: 90px;
+	height: 150px;
+	width:  100px;
+	border-radius: 10px;
 	font-size:64px;
 	cursor:pointer;
 }
@@ -35,8 +35,8 @@ margin-bottom: 0px;
 }
 
 img{
-	height: 23vh;
-	width:  8vw;
-	border-radius: 90px;
+	height: 150px;
+	width:  100px;
+	border-radius: 10px;
 }
 

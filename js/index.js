@@ -25,7 +25,7 @@ fetch('https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json')
 
         console.log(personne)
 
-		memory_array = personne.map(hero => hero.slug).slice(0, 10)
+		memory_array = personne.map(hero => hero.slug).slice(0, 12)
 
 		memory_array=memory_array.concat(memory_array);
 		newBoard(memory_array)
