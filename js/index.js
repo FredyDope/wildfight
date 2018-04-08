@@ -4,7 +4,7 @@ const showHeros = (heros) => {
             <div class="name_heros">
             <h4 id="prenom"></h4>   
             <img src="${heros.images.sm}" >
-        	</div>
+        </div>
             `
         }
 
@@ -25,7 +25,7 @@ fetch('https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json')
 
         console.log(personne)
 
-		memory_array = personne.map(hero => hero.slug).slice(0, 12)
+		memory_array = personne.map(hero => hero.slug).slice(0, 10)
 
 		memory_array=memory_array.concat(memory_array);
 		newBoard(memory_array)
@@ -51,18 +51,13 @@ function newBoard(){
     memory_array.memory_tile_shuffle();
 	for(var i = 0; i < memory_array.length; i++){
 		console.log(memory_array[i])
-		output += `
-
-				<div class="column column-50" id="tile_${i}" onclick="memoryFlipTile(this, '${memory_array[i]}')"></div>
-		`
+		output += `<div id="tile_${i}" onclick="memoryFlipTile(this, '${memory_array[i]}')"></div>`
 	}
 	document.getElementById('memory_board').innerHTML = output;
 }
 
 function memoryFlipTile(tile,slug){
-	const val = `
-			<img src="https://raw.githubusercontent.com/akabab/superhero-api/0.2.0/api/images/sm/${slug}.jpg" />
-	`
+	const val = `<img src="https://raw.githubusercontent.com/akabab/superhero-api/0.2.0/api/images/sm/${slug}.jpg" />`
 	if(tile.innerHTML == "" && memory_values.length < 2){
 		tile.style.background = '#212121';
 		tile.innerHTML = val;
