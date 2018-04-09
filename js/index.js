@@ -20,10 +20,6 @@ fetch('https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json')
 
         const myArray = []
         myArray.push(insert)
-        console.log(myArray)
-        console.log(insert)
-
-        console.log(personne)
 
 		memory_array = personne.map(hero => hero.slug).slice(0, 12)
 

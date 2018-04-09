@@ -3,15 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
 </head>
 <body>
-	<h3>WILDFIGHT</h3>
+	<div class="header">
+		<h3>WILDFIGHT</h3>
+		<button id="myBtn">Aide / A propos</button>
+	</div>
+
+	
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	<!-- Modal content -->
+  	<div class="modal-content">
+    	<span class="close">&times;</span>
+    	<h2>Jeux de mémoire:</h2>
+    	<p>Retouver les paires de cartes.</p>
+    	<p>Projet réalisé dans le cadre d'un premier hackathon en formation a la Wild Code school Paris</p>
+    	<p>Objectif: Se connecté a une API pour récupérer des informations JSON sur des supers Heros et inventer un jeux.</p>
+    	<p>Spécialisation : Javascript</p>
+  	</div>
+
+	</div>
 
 	<div id="memory_board"></div>
 
 
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
 
 </body>
 </html>
